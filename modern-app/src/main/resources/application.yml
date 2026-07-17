@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME:insurance-quote}
+  threads:
+    virtual:
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+server:
+  port: ${PORT:8080}
+  shutdown: graceful

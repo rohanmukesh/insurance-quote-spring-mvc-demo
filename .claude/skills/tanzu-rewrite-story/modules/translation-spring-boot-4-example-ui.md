@@ -1,0 +1,3 @@
+# Full Example: UI Migration
+
+This document is a placeholder for a full UI migration example (e.g. JSP to Thymeleaf profile form, or JSP to REST SPA). For complete code (user story, technical context, Thymeleaf templates, controller, i18n, configuration), see [translation-instructions-spring-boot-4-full.md](../translation-instructions-spring-boot-4-full.md) section "UI Migration Examples" (lines 2342–2786). For the core translation guide and UI module, see [translation-instructions-spring-boot-4.md](../translation-instructions-spring-boot-4.md) and [translation-spring-boot-4-ui.md](translation-spring-boot-4-ui.md).

@@ -1,0 +1,13 @@
+applications:
+  - name: insurance-quote
+    memory: 1G
+    instances: 1
+    path: target/insurance-quote-0.0.1-SNAPSHOT.jar
+    buildpacks:
+      - java_buildpack_offline
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 21.+ } }'
+      SPRING_APPLICATION_NAME: insurance-quote
+    health-check-type: http
+    health-check-http-endpoint: /health
+    timeout: 180
