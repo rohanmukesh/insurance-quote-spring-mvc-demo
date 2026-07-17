@@ -453,21 +453,41 @@
     </section>
 
     <section class="panel stack" id="e2e" role="tabpanel">
-      <div><h2>10–12 minute end-to-end version</h2><p class="muted">Show outcomes at each stage. Do not wait for every network-bound command in front of the audience.</p></div>
-      <table>
-        <thead><tr><th>Stage</th><th>Executive message</th><th>Demo treatment</th></tr></thead>
-        <tbody>
-          <tr><td>1. Assess</td><td>Tanzu finds the Spring Web migration signal.</td><td>Show one recommendation.</td></tr>
-          <tr><td>2. Onboard</td><td>Generate metadata and surface blockers.</td><td>Pre-run and summarize.</td></tr>
-          <tr><td>3. Specify</td><td>Extract behavior and tests.</td><td>Show US-001 only.</td></tr>
-          <tr><td>4. Rewrite</td><td>Generate the Boot 4 target.</td><td>Show before and after.</td></tr>
-          <tr><td>5. Prove</td><td>Run tests and package the JAR.</td><td>Run live.</td></tr>
-          <tr><td>6. Deploy</td><td>Push and call the route.</td><td>Deploy beforehand.</td></tr>
-        </tbody>
-      </table>
+      <div><h2>End-to-end modernization: what happens at each stage</h2><p class="muted">Each stage converts uncertainty into a concrete, reviewable output.</p></div>
+
+      <div class="journey" aria-label="End-to-end modernization value chain">
+        <div class="node"><strong>Unknown estate</strong><p>Legacy source and runtime</p></div><span class="arrow">→</span>
+        <div class="node"><strong>Scoped debt</strong><p>Prioritized findings</p></div><span class="arrow">→</span>
+        <div class="node accent"><strong>Behavior contract</strong><p>Stories and tests</p></div><span class="arrow">→</span>
+        <div class="node"><strong>Modern target</strong><p>Spring Boot 4 JAR</p></div><span class="arrow">→</span>
+        <div class="node accent"><strong>Running app</strong><p>Tanzu Platform route</p></div>
+      </div>
+
       <div class="grid-2">
-        <div class="card"><div class="card-header">Run during the meeting <span class="pill success">Live</span></div><div class="card-body"><p>Focused assessment recommendation</p><p>Quote acceptance criteria</p><p><code>mvnw clean test</code></p><p>Deployed quote endpoint</p></div></div>
-        <div class="card"><div class="card-header">Complete beforehand <span class="pill warning">Pre-stage</span></div><div class="card-body"><p>Skill updates and prerequisites</p><p>Advisor operations</p><p>Dependency resolution</p><p>CF login and first deployment</p></div></div>
+        <div class="card">
+          <div class="card-header">1. Assess <span class="pill info">Prioritized findings</span></div>
+          <div class="card-body"><p><strong>What happens:</strong> Tanzu analyzes the repository, frameworks, dependencies, configuration, and deployment model against modernization patterns.</p><p class="muted"><strong>Why it matters:</strong> Makes technical debt, blockers, and the Spring Web migration opportunity visible.</p></div>
+        </div>
+        <div class="card">
+          <div class="card-header">2. Onboard <span class="pill info">Platform onboarding plan</span></div>
+          <div class="card-body"><p><strong>What happens:</strong> <code>/tanzu-onboard</code> connects the assessment to local source, verifies prerequisites, generates deployment metadata, and surfaces unresolved blockers.</p><p class="muted"><strong>Why it matters:</strong> Turns assessment insight into an actionable path for this application.</p></div>
+        </div>
+        <div class="card">
+          <div class="card-header">3. Discover &amp; specify <span class="pill info">Behavior contract</span></div>
+          <div class="card-body"><p><strong>What happens:</strong> The AI agent inventories endpoints, services, data structures, integrations, and tests; then extracts user stories, acceptance criteria, and technical context.</p><p class="muted"><strong>Why it matters:</strong> Captures what the application must continue to do before code is changed.</p></div>
+        </div>
+        <div class="card">
+          <div class="card-header">4. AI-assisted modernization <span class="pill info">Spring Boot 4 target</span></div>
+          <div class="card-body"><p><strong>What happens:</strong> <code>/tanzu-modernize-app</code> translates selected stories into Spring Boot 4 code, replaces external-container bootstrap, and generates missing compatibility tests.</p><p class="muted"><strong>Why it matters:</strong> Produces modern code from reviewed requirements rather than from an unstructured rewrite.</p></div>
+        </div>
+        <div class="card">
+          <div class="card-header">5. Prove <span class="pill success">Tested deployable artifact</span></div>
+          <div class="card-body"><p><strong>What happens:</strong> The workflow compiles the target, runs existing and generated tests, applies Tanzu platform advice, and packages an executable JAR.</p><p class="muted"><strong>Why it matters:</strong> Provides automated evidence that behavior was preserved and the target is buildable.</p></div>
+        </div>
+        <div class="card">
+          <div class="card-header">6. Deploy <span class="pill success">Running Tanzu application</span></div>
+          <div class="card-body"><p><strong>What happens:</strong> Cloud Foundry consumes the manifest, selects the Java buildpack and runtime, starts the application, checks health, and exposes a route.</p><p class="muted"><strong>Why it matters:</strong> Completes the path from portfolio finding to a reachable cloud application.</p></div>
+        </div>
       </div>
     </section>
 
