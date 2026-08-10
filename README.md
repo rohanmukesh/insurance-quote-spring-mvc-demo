@@ -1,4 +1,4 @@
-# Insurance Quote — fast Tanzu modernization demo
+# Insurance Quote —  Tanzu modernization demo
 
 A deliberately small, stateless Spring MVC WAR used to demonstrate a short path from Tanzu Hub App Assessment to AI-assisted modernization and `cf push`.
 
@@ -81,5 +81,3 @@ The target rewrite should be reviewable in minutes:
 - deletion of two servlet-container bootstrap files
 - little or no business-code change
 - no backing-service provisioning
-
-This repository is a demo workload, not a production underwriting system.
