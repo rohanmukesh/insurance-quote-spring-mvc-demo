@@ -47,6 +47,40 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+      <profile>
+        <id>truesource</id>
+        <repositories>
+          <repository>
+            <id>spring-enterprise-dependencies</id>
+            <url>https://packages.broadcom.com/artifactory/tanzu-spring-dependencies/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+          </repository>
+          <repository>
+            <id>spring-enterprise-subscription</id>
+            <url>https://packages.broadcom.com/artifactory/spring-enterprise/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+          </repository>
+        </repositories>
+        <pluginRepositories>
+          <pluginRepository>
+            <id>spring-enterprise-subscription</id>
+            <url>https://packages.broadcom.com/artifactory/spring-enterprise/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+          </pluginRepository>
+          <pluginRepository>
+            <id>spring-enterprise-dependencies</id>
+            <url>https://packages.broadcom.com/artifactory/tanzu-spring-dependencies/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+          </pluginRepository>
+        </pluginRepositories>
+      </profile>
+    </profiles>
+
     <build>
         <finalName>insurance-quote</finalName>
         <plugins>
